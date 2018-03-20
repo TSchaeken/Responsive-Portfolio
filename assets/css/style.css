@@ -1,0 +1,183 @@
+body {
+    /*background-image:url("../images/halftone/halftone/halftone.png");*/
+    /*background-image:url("../images/halftone/halftone/halftone.png");*/
+    background-image:url('../images/francesco-gallarotti-2498-unsplash.jpg');
+    background-size:1920px;
+}
+
+hr {
+    background-color:brown;
+}
+
+
+#head-container {
+    height:100px;
+    width:100%;
+    position:fixed;
+    top:0;
+}
+
+#head-container:after {
+    content:'';
+    opacity:0.6;
+    height:50px;
+    border-top:10px solid brown;
+    background-image:url("../images/cream_pixels/cream_pixels/cream_pixels.png");
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+#header-name {
+    font-size:3em;
+    font-family: 'Titillium Web', sans-serif;
+    color:rgb(63, 12, 12); 
+    width:50%;
+    position:absolute;
+    top:-5px;
+    z-index:1;
+}
+
+
+#navbar {
+    position:absolute;
+    left:15%;
+    top:15px;
+    width:70%;
+    z-index:1;
+}
+
+#button-container {
+    width:50%;
+    position:absolute;
+    right:0;
+    top:0px;
+    z-index:3;
+}
+
+.navbutton {
+    float:right;
+    padding:5px 15px;
+    font:1em 'Titillium Web', sans-serif; 
+    height:30px;
+}
+
+#body-container {
+    margin:0 auto;
+    padding-top:20px;
+    padding-bottom:150px;
+    width:70%;
+    background-image:url("../images/cream_pixels/cream_pixels/cream_pixels.png");
+    border: 1px solid brown;
+    position:relative;
+    top:200px;
+}
+
+
+#body-header {
+    margin:15px 0 30px 5%;
+    width:100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:2em;
+}
+
+#body-text {
+    width:60%;
+    height:100%;
+    margin-left:5%;
+    margin-top:5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1.25em;
+    line-height: 25px;
+}
+
+#ph {
+    width:25%;
+    float:right;
+    position:absolute;
+    bottom:20%;
+    left:70%;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: right;
+}
+
+#ph-image {
+    width:100%;
+    border:1px solid brown;
+
+}
+
+
+#footer-container {
+    height:50px;
+    width:100%;
+    background-image:url("../images/cream_pixels/cream_pixels/cream_pixels.png");
+    border-bottom:10px solid brown;
+    margin-top:30px;
+    position:fixed;
+    bottom:0;
+    opacity:0.6;
+}
+
+.clearDiv {
+    clear:both;
+}
+
+.float-list {
+    float:left;
+    margin:20px 10px 20px 10px;
+}
+
+a {
+    color:rgb(63, 12, 12);
+}
+
+@media only screen and (max-width: 768px) {
+    #head-container {
+        position:static;
+        height:100px;
+    }
+    
+    #head-container:after {
+        height:100px;
+    }
+
+    #header-name {
+        width:100%;
+    }
+
+    #button-container {
+        width:300px;
+        position:relative;
+        left:-10px;
+        top:50px;
+        display:block;
+    }
+
+    .navbutton {
+        float:left;
+    }
+
+    #navbar {
+        height:200px;
+    }
+
+    #ph {
+        width:300px;
+        position:absolute;
+        bottom:0;
+        left:50px;
+    }
+    
+    #ph-image {
+        width:100%;
+        position:relative;
+        display:block;
+        float:left;
+    }
+
+    #body-container {
+        height:800px;
+    }
+}
